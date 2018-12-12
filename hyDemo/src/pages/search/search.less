@@ -1,0 +1,41 @@
+@color1: #043567;
+.search-area{
+    display: flex;
+    background: #f4f4f4;
+    flex-direction: column;
+    
+    .search-input{
+        display: flex;
+        flex-direction: row;
+        padding: 1rem .5rem;
+        input{
+            width: 70%;
+            height: 38px;
+            line-height: 38px;
+            border: 1px solid #ccc;
+            box-shadow: inset 0 0 10px #ccc;
+            color: #000;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        button{
+            width: 30%;
+            height: 40px;
+            line-height: 40px;
+            margin-left: 5px;
+        }
+    }
+    
+    .forecast{
+        display: flex;
+        margin-top: 50rpx;
+        .next-day{
+          width: 20%;
+          text-align: center;
+          line-height: 30px;
+          font-size: 14px;
+          border: 1px solid @color1;
+          border-radius: 10rpx;
+        }
+      }
+}

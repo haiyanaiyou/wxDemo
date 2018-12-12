@@ -1,0 +1,72 @@
+.btn {
+  position: fixed;
+  bottom: 30%;
+  right: 0;
+  width: 20%;
+}
+.btn button {
+  font-size: 20rpx;
+}
+.content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 微软雅黑, 宋体;
+  box-sizing: border-box;
+  padding: 20rpx 10rpx;
+  color: #252525;
+  font-size: 16px;
+  background-color: #f2f2f8;
+}
+.content .info {
+  margin-top: 50rpx;
+  width: 100%;
+}
+.content .city {
+  margin: 20px;
+  border-bottom: 1px solid #043567;
+}
+.content .temp {
+  font-size: 120rpx;
+  line-height: 130rpx;
+  text-align: center;
+  padding-top: 20rpx;
+  color: #043567;
+}
+.content .weather {
+  line-height: 22px;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+.content .yesterday {
+  width: 93%;
+  padding: 20rpx;
+  margin-top: 50rpx;
+  border-radius: 10rpx;
+  border: 1px solid #043567;
+}
+.content .yesterday .yesterday-title {
+  color: red;
+}
+.content .forecast {
+  width: 100%;
+  display: flex;
+  margin-top: 50rpx;
+  align-self: flex-end;
+}
+.content .forecast .next-day {
+  width: 20%;
+  height: 450rpx;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  margin: 0 3rpx;
+  border: 1px solid #043567;
+  border-radius: 10rpx;
+}
+.content .date {
+  margin-bottom: 20rpx;
+  border-bottom: 1px solid #043567;
+  color: #f29f39;
+}

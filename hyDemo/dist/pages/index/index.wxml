@@ -1,0 +1,44 @@
+<view class='content'>
+  <view class='btn'>
+    <button bindtap='showPopup'>点击一下</button>
+  </view>
+  <popup id="popup"
+    title="提示"
+    content="确定删除"
+    btn_no="取消"
+    btn_ok="确定"
+    bind:error="_error"
+    bind:success="_success">
+  </popup>
+  <!-- 显示当天天气 -->
+  <view class="info">
+    <view class="city">{{city}} {{today}}</view>
+    <view class="temp">{{weather.wendu}} ℃</view>
+    <view class="weather">{{weather.ganmao}}</view>
+  </view>
+  <!-- 昨天的天气 -->
+  <view class="yesterday">
+    <view class="detail">
+      <text class="yesterday-title">昨天</text>
+      {{weather.yesterday.date}}
+    </view>
+    <view class="detail">
+      {{weather.yesterday.type}}
+      {{weather.yesterday.fx}}
+      {{weather.yesterday.fl}}
+      {{weather.yesterday.low}}
+      {{weather.yesterday.high}}
+    </view>
+  </view>
+  <!-- 最近五天的天气信息 -->
+  <view class="forecast">
+    <view class="next-day" wx:for="{{weather.forecast}}" wx:key="{{index}}">
+      <view class="detail date">{{item.date}}</view>
+      <view class="detail">{{item.type}}</view>
+      <view class="detail">{{item.high}}</view>
+      <view class="detail">{{item.low}}</view>
+      <view class="detail">{{item.fengxiang}}</view>
+      <view class="detail">{{item.fengli}}</view>
+    </view>
+  </view>
+</view>
